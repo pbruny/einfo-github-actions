@@ -17,7 +17,7 @@ jobs:
         run: npm install --global vercel@latest
 
       - name: Stage 2 - Pull Vercel token
-        run: vercel pull --yes --enviroment=production --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
         
       - name: Stage 3 - Build Project Artifacts
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
