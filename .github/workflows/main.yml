@@ -3,10 +3,9 @@ on:
   push:
     branches:
       - master
-  schedule: 
-    - cron: "0 */12 * * *"
+  workflow_dispatch: 
 jobs: 
-  Deploy-to-production:
+  Deploy-Production:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
