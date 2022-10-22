@@ -5,7 +5,7 @@ on:
       - master
   workflow_dispatch: 
 jobs: 
-  Deploy-to-production:
+  Deploy-Production:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
